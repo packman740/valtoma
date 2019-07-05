@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Valtoma</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="HandheldFriendly" content="true">
+    <meta
+      name="description"
+      content="Leo's kitchen is a premium food delivery service with the mission to bring affordable and healthy meals to as many people as possible"
+    />
+
+    <link href="https://fonts.googleapis.com/css?family=Staatliches&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sriracha&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--https://medium.com/@heyoka/responsive-pure-css-off-canvas-hamburger-menu-aebc8d11d793-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+<header>
+
+	<article class="cover">
+		<img class="coverimg" src="camp.jpg">
+	</article>
+
+	<div class="nav-container">
+		<div class="logo-cont"><img class="logo" src="Valtoma.png"></div>
+		<nav>
+			<ul>
+				<li><a href="#">VEIKLA</a></li>
+				<li><a href="#">MEDŽIO ANGLIS</a></li>
+				<li><a href="#">KONTAKTAI</a></li>
+			</ul>
+		</nav>
+	</div>
+
+</header>
+
+<div  id="veikla">
+
+<h1 class="serv">PASLAUGOS</h1>
+
+<div data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine" class="flex-space ">
+
+<div  class="veikla-cont">
+<p><img class="img-cont" src="delivery.png"></p>
+<p><h1>PRISTATYMAS</h1></p>
+<p>Mūsų kompanija siūlo logistikos sprendimus, atitinkančius kiekvieno individualaus kliento poreikius.</p>
+</div>
+
+<div class="veikla-cont">
+<p><img class="img-cont" src="fire.png"></p>
+<p><h1>ANGLIS</h1></p>
+<p>Mes siūlome aukščiausios kokybės medžio anglis profesionaliam maisto ruošimui.</p>
+<button class="btn1"><a href="#anglis">Skaityti Daugiau</a></button>
+</div>
+
+<div class="veikla-cont">
+<p><img class="img-cont" src="connection.png"></p>
+<p><h1>APLINK PASAULĮ</h1></p>
+<p>Pagrindinės mūsų veiklos sritys - Europos Sąjunga, Rusija, Baltarusija.</p>
+
+</div>
+</div>
+</div>
+
+
+
+<div id="anglis">
+
+<h1>ANGLIS</h1>
+
+<div class="anglis-cont">
+
+<p>Mes siūlome aukščiausios kokybės medžio anglis profesionaliam maisto ruošimui. Dėl mažo drėgmės kiekio, mūsų siūloma, medžio anglis pasižymi šiomis savybėmis:</p>
+<br>
+<p>&#10004;Lengvas ir greitas įdegimas</p>
+<p>&#10004;Ilgai išlaiko aukštą ir stabilią temperatūrą</p>
+<p>&#10004;Nedūmija ir dega be liepsnos</p>
+<br>
+<p>Pridėję daugiau medžio anglių į kepsninę, galite ir toliau nenukeldami kepti ruošiamą maistą. Pramoninis gamybos būdas užtikrina, kad tokios anglys nedūmys, neliepsnos ir meistras galės dirbti ilgą laiką.</p>
+
+<p>Mažas peleningumas, ypač lengva kepsninės priežiūra ir valymas, nes medžio anglys visiškai sudega ir lieka labai mažai</p>pelenų.
+
+</div>
+</div>
+
+<div class="line"></div>
+
+<div>
+<div class="slideshow-container">
+	
+	<div class="mySlides fade"><img class="anglisimg" src="soap.jpg" style='width: 100%;'></div>
+	<div class="mySlides fade"><img class="anglisimg" src="soap2.jpg" style='width: 100%;'></div>
+	<div class="mySlides fade"><img class="anglisimg" src="soap.jpg" style='width: 100%;'></div>
+	<div class="mySlides fade"><img class="anglisimg" src="soap2.jpg" style='width: 100%;'></div>
+	<div class="mySlides fade"><img class="anglisimg" src="soap.jpg" style='width: 100%;'></div>
+	<div class="mySlides fade"><img class="anglisimg" src="soap2.jpg" style='width: 100%;'></div>
+	
+	<div class="dots" style='text-align: center;'>
+  <span class="dot" onclick='currentSlide(1)'></span>
+  <span class="dot" onclick='currentSlide(2)'></span>
+  <span class="dot" onclick='currentSlide(3)'></span>
+  <span class="dot" onclick='currentSlide(4)'></span>
+	</div>
+</div>
+</div>
+
+<div class="formdiv">
+<h1 class="formh1">Susisiekti</h1>
+
+<form id="form" class="topBefore">
+		  <input id="name" class="form-item" type="text" placeholder="NAME">
+		  <input id="email" class="form-item" type="text" placeholder="E-MAIL">
+		  <textarea id="message" class="form-item" type="text" placeholder="MESSAGE"></textarea>
+  <input id="submit" type="submit" class="form-item" value="GO!">
+</form>
+<div class="after">
+<p>SKAMBINKITE NUMERIU : +37075577895</p>
+<p>SUSISIEKITE EMAIL : valtoma02@gmail.com</p>
+</div>
+</div>
+
+<footer>
+	
+
+</footer>
+
+
+<script type="text/javascript">
+
+	var slideIndex = 1;
+
+var myTimer;
+
+window.addEventListener("load",function() {
+    showSlides(slideIndex);
+    myTimer = setInterval(function(){plusSlides(1)}, 4000);
+})
+
+// NEXT AND PREVIOUS CONTROL
+function plusSlides(n){
+  clearInterval(myTimer);
+  if (n < 0){
+    showSlides(slideIndex -= 1);
+  } else {
+   showSlides(slideIndex += 1); 
+  }
+  if (n === -1){
+    myTimer = setInterval(function(){plusSlides(n + 2)}, 4000);
+  } else {
+    myTimer = setInterval(function(){plusSlides(n + 1)}, 4000);
+  }
+}
+
+//Controls the current slide and resets interval if needed
+function currentSlide(n){
+  clearInterval(myTimer);
+  myTimer = setInterval(function(){plusSlides(n + 1)}, 4000);
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n){
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+</script>
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+  AOS.init();
+</script>
+
+</body>
+</html>
