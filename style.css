@@ -22,7 +22,7 @@ body{
 	justify-content: space-around;
 }
 
-@media only screen and (max-width: 1020px){
+@media only screen and (max-width: 768px){
 	.flex-space{
 		display: initial;
 	}
@@ -51,7 +51,7 @@ body{
 	opacity: 0.9;
 }
 
-@media only screen and (max-width: 1020px){
+@media only screen and (max-width: 768px){
 	.coverimg{
 		height: 100%;
 		width: auto;
@@ -86,7 +86,7 @@ header::after{
 	width: 15rem;
 }
 
-@media only screen and (max-width: 1020px){
+@media only screen and (max-width: 768px){
 	.logo-cont{
 		width: 100%;
 		float: none;
@@ -122,7 +122,7 @@ nav a{
 
 }
 
-@media only screen and (max-width: 1020px){
+@media only screen and (max-width: 768px){
 	nav a{
 		display: none;
 	}
@@ -154,14 +154,14 @@ nav a:hover::after{
 	padding-top: 3rem;
 }
 
-@media only screen and (max-width: 1020px){
+@media only screen and (max-width: 768px){
 	#veikla{
 		text-align: center;
 		height: 95rem;
 	}
 }
 
-@media only screen and (max-width: 1020px){
+@media only screen and (max-width: 768px){
 	#veikla{
 		overflow: hidden;
 	}
@@ -172,7 +172,7 @@ nav a:hover::after{
 	margin: 0;
 }
 
-@media only screen and (max-width: 1020px){
+@media only screen and (max-width: 768px){
 	#veikla h1{
 		margin-bottom: 2rem;
 	}
@@ -197,7 +197,7 @@ nav a:hover::after{
 	line-height: 30px;
 }
 
-@media only screen and (max-width: 1020px){
+@media only screen and (max-width: 768px){
 	.veikla-cont{
 		margin: 0 auto;
 		padding-bottom: 3rem;
@@ -227,7 +227,7 @@ button a {
 	text-transform: uppercase;
 }
 
-@media only screen and (max-width: 1020px){
+@media only screen and (max-width: 768px){
 	button{
 		display: none;
 	}
@@ -252,7 +252,7 @@ button a {
 	font-size: 1.3rem;
 }
 
-@media only screen and (max-width: 1020px){
+@media only screen and (max-width: 768px){
 	.anglis-cont{
 		width: 75%;
 		text-align: center;
@@ -278,7 +278,7 @@ button a {
    	margin-bottom: 2rem;
 }
 
-@media only screen and (max-width: 1020px){
+@media only screen and (max-width: 768px){
 	.slideshow-container{
 		width: 90%;
 	}
@@ -394,7 +394,7 @@ input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
 	margin: 0 auto;
 }
 
-@media only screen and (max-width: 1020px){
+@media only screen and (max-width: 768px){
 	.formdiv{
 		text-align: center;
 		overflow: hidden;
@@ -407,7 +407,6 @@ input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
 form{
 	text-align: center;
 	height: 40rem;
-
 }
 
 .formh1{
@@ -417,7 +416,7 @@ form{
 	padding-top: 3rem;
 }
 
-@media only screen and (max-width: 1020px){
+@media only screen and (max-width: 768px){
 	.formh1{
 		margin-bottom: 2rem;
 		margin-top: 1rem;
@@ -429,11 +428,11 @@ form{
 #form {
   margin: 0 auto;
   height: auto;
-  width: 700px;
+  width: 1000px;
   margin-top: 3rem;
   }
 
-@media only screen and (max-width: 1020px){
+@media only screen and (max-width: 768px){
 	#form{
 		width: 300px;
 		margin: 0 auto;
@@ -448,29 +447,29 @@ form{
 	}
 
 	#name{
-		width: 300px;
+		width: 80%;
 	}
 
 	#email{
-		width: 300px;
+		width: 80%;
 	}
 
-	#message{
-		width: 300px;
+	textarea#message.form-item{
+		width: 80%; 
 	}
 
 	input#submit{
 		margin-top: 0px;
-		width: 330px;
+		width: 85%;
 		padding-top: 0px;
 		border-top: solid 1px #b3aca7;
 	}
 }
 
-  .topBefore{
+.topBefore{
   	margin: 0 auto;
   	width: 100%;
-  }
+}
 
 input {
   font-family: 'Lato', sans-serif;
@@ -496,7 +495,6 @@ input:hover {
 
 textarea {
   width: 470px;
-  max-width: 470px;
   height: 110px;
   max-height: 110px;
   padding: 15px;
@@ -517,7 +515,9 @@ textarea:hover {
   color: #e2dedb;
 }
 
-@media only screen and (max-width: 1020px){
+@media only screen and (max-width: 768px){
+
+
 	input, textarea{
 		position: relative;
 		width: 100%;
@@ -535,7 +535,6 @@ textarea:hover {
   outline:none;
   cursor: pointer;
   border: solid 1px #b3aca7;
-  border-top: none;
 }
 
 #submit:hover {
@@ -550,9 +549,24 @@ textarea:hover {
 	opacity: 0.5;
 }
 
+#messageSent{
+	visibility: hidden;
+	margin: 0 auto;
+}
+
+ 
+.error {
+  position: absolute;
+  color: red;
+  margin-left: 2rem;
+}
+ 
+input.error {
+  display: inline;
+}
+
 footer{
 	height: 5rem;
 	background-color: #313234;
-
 }
 

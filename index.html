@@ -13,6 +13,9 @@
     <link href="https://fonts.googleapis.com/css?family=Staatliches&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Sriracha&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    
+
     <!--https://medium.com/@heyoka/responsive-pure-css-off-canvas-hamburger-menu-aebc8d11d793-->
     <link rel="stylesheet" type="text/css" href="style.css">
 
@@ -114,22 +117,30 @@
 <div class="formdiv">
 <h1 class="formh1">Susisiekti</h1>
 
-<form id="form" class="topBefore">
-		  <input id="name" class="form-item" type="text" placeholder="NAME">
-		  <input id="email" class="form-item" type="text" placeholder="E-MAIL">
-		  <textarea id="message" class="form-item" type="text" placeholder="MESSAGE"></textarea>
+
+<form id="form" class="topBefore" method="get">
+		  <input name="name" id="name" class="form-item" type="text" placeholder="NAME"><small class="error1 error"></small>
+		  <input name="email" id="email" class="form-item" type="text" placeholder="E-MAIL"><small class="error2 error"></small>
+		  <textarea name="message" id="message" class="form-item" type="text" placeholder="MESSAGE"></textarea><small class="error3 error"></small>
   <input id="submit" type="submit" class="form-item" value="GO!">
 </form>
 <div class="after">
 <p>SKAMBINKITE NUMERIU : +37075577895</p>
-<p>SUSISIEKITE EMAIL : valtoma02@gmail.com</p>
+<p>SUSISIEKITE EMAIL : valtoma01@gmail.com</p>
 </div>
+<small id="messageSent">Your message has been sent.</small>
+
 </div>
+
+
 
 <footer>
 	
 
 </footer>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 
 <script type="text/javascript">
@@ -180,9 +191,53 @@ function showSlides(n){
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
-
 </script>
 
+<script type="text/javascript">
+
+
+
+	function isEmail(email) {
+  		var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+  		return regex.test(email);
+  	}
+
+	$("#submit").click(function(){
+
+		var errorMessage1 = "";
+		var errorMessage2 = "";
+		var errorMessage3 = "";
+
+
+		if ($('#name').val() < 1){
+		errorMessage1 += " you need to enter your name "
+	}
+		$('.error1').html(errorMessage1);
+
+	if (isEmail($('#email').val()) == false){
+		errorMessage2 += " email adress not valid ";
+	}
+		$('.error2').html(errorMessage2);
+
+	if ($('#message').val() < 1){
+		errorMessage3 += "you need to enter your message"
+	}
+		$('.error3').html(errorMessage3);	
+
+	
+});
+</script>
+
+
+<script type="text/javascript">
+
+	$("#form").submit(function(e) {
+
+    e.preventDefault();
+
+});
+
+</script>
 
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
